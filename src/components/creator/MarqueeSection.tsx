@@ -24,32 +24,31 @@ function MarqueeImage({ src }: { src: string }) {
   )
 }
 
-const GIFS = [
-  'https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif',
-  'https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif',
-  'https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif',
-  'https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif',
-  'https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif',
-  'https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif',
-  'https://motionsites.ai/assets/hero-vitara-preview-Cjz2QYyU.gif',
-  'https://motionsites.ai/assets/hero-terra-preview-BFjrCr7T.gif',
-  'https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif',
-  'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',
-  'https://motionsites.ai/assets/hero-designpro-preview-D8c5_een.gif',
-  'https://motionsites.ai/assets/hero-stellar-ai-preview-D3HL6bw1.gif',
-  'https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif',
-  'https://motionsites.ai/assets/hero-orbit-web3-preview-BXt4OttD.gif',
-  'https://motionsites.ai/assets/hero-nexora-preview-cx5HmUgo.gif',
-  'https://motionsites.ai/assets/hero-evr-ventures-preview-DZxeVFEX.gif',
-  'https://motionsites.ai/assets/hero-planet-orbit-preview-DWAP8Z1P.gif',
-  'https://motionsites.ai/assets/hero-new-era-preview-CocuDUm9.gif',
-  'https://motionsites.ai/assets/hero-wealth-preview-B70idl_u.gif',
-  'https://motionsites.ai/assets/hero-luminex-preview-CxOP7ce6.gif',
-  'https://motionsites.ai/assets/hero-celestia-preview-0yO3jXO8.gif',
+const IMAGES = [
+  '/marquee/space-voyage.jpg',
+  '/marquee/codenest.jpg',
+  '/marquee/vex-ventures.jpg',
+  '/marquee/stellar-ai-v2.jpg',
+  '/marquee/asme.jpg',
+  '/marquee/transform-data.jpg',
+  '/marquee/vitara.jpg',
+  '/marquee/terra.jpg',
+  '/marquee/skyelite.jpg',
+  '/marquee/aethera.jpg',
+  '/marquee/designpro.jpg',
+  '/marquee/stellar-ai.jpg',
+  '/marquee/xportfolio.jpg',
+  '/marquee/orbit-web3.jpg',
+  '/marquee/nexora.jpg',
+  '/marquee/evr-ventures.jpg',
+  '/marquee/planet-orbit.jpg',
+  '/marquee/new-era.jpg',
+  '/marquee/wealth.jpg',
+  '/marquee/luminex.jpg',
 ]
 
-const ROW1 = GIFS.slice(0, 11)
-const ROW2 = GIFS.slice(11)
+const ROW1 = IMAGES.slice(0, 10)
+const ROW2 = IMAGES.slice(10)
 
 const tripled = (arr: string[]) => [...arr, ...arr, ...arr]
 

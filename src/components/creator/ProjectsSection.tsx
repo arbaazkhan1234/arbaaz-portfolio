@@ -3,9 +3,6 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import FadeIn from './FadeIn'
 import LiveProjectButton from './LiveProjectButton'
 
-const mshot = (url: string, w = 1000) =>
-  `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=${w}`
-
 interface Project {
   n: string
   category: string
@@ -21,27 +18,24 @@ const PROJECTS: Project[] = [
     category: 'Client',
     name: 'Daylight',
     live: 'https://godaylight.com/',
-    col1: [mshot('https://godaylight.com/product'), mshot('https://godaylight.com/brand')],
-    col2: mshot('https://godaylight.com/', 1200),
+    col1: ['/projects/daylight-1.jpg', '/projects/daylight-2.jpg'],
+    col2: '/projects/daylight-3.jpg',
   },
   {
     n: '02',
     category: 'Client',
     name: 'Cleo',
     live: 'https://web.meetcleo.com',
-    col1: [
-      'https://www.datocms-assets.com/157778/1769568837-j-favorite.png?auto=format&fit=max&w=900',
-      'https://www.datocms-assets.com/157778/1770240296-cleo_weisenhof_shot_12_094-v003-1.png?auto=format&fit=max&w=900',
-    ],
-    col2: 'https://www.datocms-assets.com/157778/1770240497-cleo_lions-ark_shot_24_004-v005-4.png?auto=format&fit=max&w=1200',
+    col1: ['/projects/cleo-1.jpg', '/projects/cleo-2.jpg'],
+    col2: '/projects/cleo-3.jpg',
   },
   {
     n: '03',
     category: 'Client',
     name: 'Risk',
     live: 'https://risk.film/works',
-    col1: [mshot('https://risk.film/about'), mshot('https://risk.film/work/we-took-the-time')],
-    col2: mshot('https://risk.film/', 1200),
+    col1: ['/projects/risk-1.jpg', '/projects/risk-2.jpg'],
+    col2: '/projects/risk-3.jpg',
   },
 ]
 
