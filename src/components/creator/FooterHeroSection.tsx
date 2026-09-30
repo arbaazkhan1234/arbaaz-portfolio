@@ -5,6 +5,9 @@ import FadeIn from './FadeIn'
 const PORTRAIT_SRC =
   'https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png'
 
+const WHATSAPP_MESSAGE = "Hi Arbaaz, I checked out your portfolio and I'd love to discuss a project with you."
+const WHATSAPP_HREF = `https://wa.me/923026738563?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
+
 export default function FooterHeroSection() {
   return (
     <footer
@@ -47,7 +50,7 @@ export default function FooterHeroSection() {
           </FadeIn>
 
           <FadeIn delay={0.5} y={20}>
-            <ContactButton href="mailto:arbazrana440@gmail.com" />
+            <ContactButton href={WHATSAPP_HREF} target="_blank" rel="noopener noreferrer" />
           </FadeIn>
         </div>
       </div>
